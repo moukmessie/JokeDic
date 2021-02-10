@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>Joke dictionary</title>
+
+</head>
+<body>
+
+<div class="container-fluid" id="first_div">
+
+    <header>
+        <h1>JOKE DICTIONARY</h1>
+        <a href="index.html"> <div class="orange"></div></a>
+    </header>
+
+    <div class="second-div">
+        <h2>GOOD JOKE   </h2>
+
+        <div class="form-group">
+
+            <input type="text" name="search_1" class="form-control inp"  id="search_1"  value=""  placeholder="Mots clés..." onKeyPress= "if (event.keyCode == 13) searchJoke()"  >
+            <input type="button" class="btn btn-secondary" onclick="searchJoke()" value="Chercher">
+        </div>
+
+
+        <br>
+        <div class="row">
+            <div id="joke-05" class="col bg-light joke">
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<script src="App.js"></script>
+
+<style>
+
+    html,body{
+        margin: 0;
+        padding: 0;
+        height: 0;
+    }
+    body{
+        background: #ffe3bd;
+        text-align: center;
+        align-items: center;
+        padding: 1px;
+    }
+    header h1{
+        text-align: left;
+        font-family: 'Kufam', cursive;
+        padding: 15px;
+    }
+
+    .second-div{
+        padding: 15px;
+        width: 60%;
+        margin: 0px auto;
+    }
+    h2{
+        font-family: 'Kufam', cursive;
+        padding: 15px;
+        width: 60%;
+        margin: 0px auto;
+    }
+    .joke{
+
+        font-family: Architects Daughter,cursive;
+        font-size: 1em;
+    //background-clip: content-box;
+    }
+    /* .btn{
+         width: 20%; height: 50px;
+         justify-content: center;
+         flex-direction: column;
+         display: flex;
+         position: relative;
+         transform: translateX(690px);
+
+     }
+
+     .inp{
+         justify-content: center;
+         flex-direction: column;
+         position: absolute;
+         width: 50%; height: 50px;
+     }*/
+    .btn{
+        width: 20%; height: 50px;
+
+    }
+    .inp{
+        width: 50%; height: 50px;
+    }
+    .form-group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .orange:before{
+    //background-image: url("NAEFAM_2021_241 (2).jpg");
+        content: "";
+        position: absolute;
+        top: 3.9em;
+        left: 3.9em;
+        height: 0;
+        width: 0;
+        border: 1em solid #539e3d;
+        border-radius: 50% 0 50% 0;
+    }
+
+
+    .orange{
+        width: 5.6em;
+        height: 5.6em;
+        background-color:#ffb526 ;
+        border-radius: 50%;
+        box-shadow: inset .2em -.2em #cc8a0c;
+        cursor: pointer;
+    }
+    input{
+        font-family: 'Architects Daughter', cursive;
+        font-size: 1.3em;
+
+    }
+
+
+</style>
+
+
+</body>
+
+</html>
